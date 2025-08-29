@@ -1,0 +1,4 @@
+/home/vlerm/gh-projects/improved-fraction/build/CMakeFiles/fractionlib.dir
+/home/vlerm/gh-projects/improved-fraction/build/CMakeFiles/fraction.dir
+/home/vlerm/gh-projects/improved-fraction/build/CMakeFiles/edit_cache.dir
+/home/vlerm/gh-projects/improved-fraction/build/CMakeFiles/rebuild_cache.dir
