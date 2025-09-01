@@ -1,9 +1,39 @@
 #include "fraction.hpp"
 #include <iostream>
+#include <vector>
 
-
-void Fraction::simplify(){
+void Fraction::simplify(Fraction& f){
   //TODO: Search how to simplify a fraction in code!
+}
+
+std::vector<Fraction> Fraction::normalize(const Fraction& f1, const Fraction& f2){
+  std::vector<Fraction> normalizedFractions;
+
+  //Verify if it is already normalized
+  if(f1.denominator == f2.denominator){
+    normalizedFractions.push_back(Fraction(f1.numerator, f1.denominator));
+    normalizedFractions.push_back(Fraction(f2.numerator, f2.denominator));
+  }
+  else{
+
+    //First fraction being normalized
+    normalizedFractions.push_back(
+      Fraction(
+        f1.numerator * f2.denominator,
+        f1.denominator * f2.denominator
+      )
+    );
+    
+    //Second fraction being normalized
+    normalizedFractions.push_back(
+      Fraction(
+        f1.numerator * f2.denominator,
+        f1.denominator * f2.denominator
+      )
+    );
+  }
+
+  return normalizedFractions;
 }
 Fraction& Fraction::operator++(){
   this->numerator += this->denominator;
@@ -15,13 +45,34 @@ Fraction& Fraction::operator--(){
   return *this;
 }
 
-Fraction& Fraction::operator+(Fraction f){
-  Fraction* newF = new Fraction();
-  if(this->denominator != f.denominator){
-    //TODO: Get the denominator of f, so the multiplication can work!
-  }
+Fraction Fraction::operator+(const Fraction& f){
+  std::vector<Fraction> normalizedFractions = Fraction::normalize(*this, f);
+  return Fraction(
+    normalizedFractions.at(0).numerator + normalizedFractions.at(1).numerator, 
+    normalizedFractions.at(0).denominator
+  );
 }
 
+Fraction Fraction::operator-(const Fraction& f){
+  std::vector<Fraction> normalizedFractions = Fraction::normalize(*this, f);
+  return Fraction(
+    normalizedFractions.at(0).numerator - normalizedFractions.at(1).numerator,
+      normalizedFractions.at(0).denominator
+  );
+}
+
+Fraction Fraction::operator*(const Fraction& f){
+  return Fraction(
+    this->numerator * f.numerator,
+    this->denominator * f.denominator
+  );
+}
+Fraction Fraction::operator/(const Fraction& f){
+  return Fraction(
+    this->numerator * f.denominator,
+    this->denominator * f.numerator
+  );
+}
 std::string Fraction::toString(){
   return std::to_string(this->numerator) + "/" + std::to_string(this->denominator);
 }
