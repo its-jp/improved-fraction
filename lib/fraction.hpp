@@ -7,12 +7,12 @@ class Fraction{
     int denominator;
        
   public:
-    Fraction(int n=1, int d=1): numerator(n), denominator(d) {}
+    Fraction(int n=1, int d=1): numerator(n), denominator(d) {} //they are being initialized, not an assignment!
     
-    Fraction operator+(const Fraction& f);
-    Fraction operator-(const Fraction& f);
-    Fraction operator/(const Fraction& f);
-    Fraction operator*(const Fraction& f);
+    Fraction operator+(const Fraction& f) const; //const at the end of the method allow a const this given object to call it!
+    Fraction operator-(const Fraction& f) const;
+    Fraction operator/(const Fraction& f) const;
+    Fraction operator*(const Fraction& f) const;
 
 
     Fraction& operator++();
