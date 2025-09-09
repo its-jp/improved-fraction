@@ -20,9 +20,13 @@ class Fraction{
     
     Fraction operator++(int);
     Fraction operator--(int);
-
+    
+    bool operator==(const Fraction& f) const;
+    bool operator!=(const Fraction& f) const;
+    bool operator<=(const Fraction& f) const;
+    bool operator>=(const Fraction& f) const;
     std::string toString();
-
+    
     static std::vector<Fraction> normalize(const Fraction& f1, const Fraction& f2);
     static void simplify(Fraction& f);
 };

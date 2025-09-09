@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/fraction.dir/link.d"
   "CMakeFiles/fraction.dir/lib/fraction.cpp.o"
   "CMakeFiles/fraction.dir/lib/fraction.cpp.o.d"
   "CMakeFiles/fraction.dir/main.cpp.o"

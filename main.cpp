@@ -6,5 +6,7 @@ int main(){
   ++f1;
   --f1;
   std::cout << f1.toString() << "\n";
+  std::cout << (f1++).toString() << "\n";
+  std::cout << f1.toString() << "\n";
   return 0;
 }
