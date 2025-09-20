@@ -154,4 +154,8 @@ CMakeFiles/fraction.dir/main.cpp.o: \
  /home/vlerm/gh-repos/improved-fraction/lib/linked_list.hpp \
  /home/vlerm/gh-repos/improved-fraction/lib/node.hpp \
  /home/vlerm/gh-repos/improved-fraction/lib/node.inl \
- /home/vlerm/gh-repos/improved-fraction/lib/linked_list.inl
+ /home/vlerm/gh-repos/improved-fraction/lib/linked_list.inl \
+ /home/vlerm/gh-repos/improved-fraction/lib/queue.hpp \
+ /home/vlerm/gh-repos/improved-fraction/lib/queue.inl \
+ /home/vlerm/gh-repos/improved-fraction/lib/stack.hpp \
+ /home/vlerm/gh-repos/improved-fraction/lib/stack.inl

@@ -12,11 +12,13 @@ class LinkedList {
     void addNodeLast(Node<T>* node);
     void addNodeFirst(Node<T>* node);
 
-    Node<T>* removeNodeLast();
-    Node<T>* removeNodeFirst();
+    Node<T>* popNodeLast();
+    Node<T>* popNodeFirst();
+    void removeNodeLast();
+    void removeNodeFirst();
 
-    std::string toString();
-  private:    
+    std::string toString() const;
+  protected:    
     Node<T>* head;
 };
 

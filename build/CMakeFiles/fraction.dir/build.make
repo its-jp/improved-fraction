@@ -76,29 +76,29 @@ CMakeFiles/fraction.dir/main.cpp.o: CMakeFiles/fraction.dir/flags.make
 CMakeFiles/fraction.dir/main.cpp.o: /home/vlerm/gh-repos/improved-fraction/main.cpp
 CMakeFiles/fraction.dir/main.cpp.o: CMakeFiles/fraction.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vlerm/gh-repos/improved-fraction/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fraction.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fraction.dir/main.cpp.o -MF CMakeFiles/fraction.dir/main.cpp.o.d -o CMakeFiles/fraction.dir/main.cpp.o -c /home/vlerm/gh-repos/improved-fraction/main.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fraction.dir/main.cpp.o -MF CMakeFiles/fraction.dir/main.cpp.o.d -o CMakeFiles/fraction.dir/main.cpp.o -c /home/vlerm/gh-repos/improved-fraction/main.cpp
 
 CMakeFiles/fraction.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fraction.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vlerm/gh-repos/improved-fraction/main.cpp > CMakeFiles/fraction.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vlerm/gh-repos/improved-fraction/main.cpp > CMakeFiles/fraction.dir/main.cpp.i
 
 CMakeFiles/fraction.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fraction.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vlerm/gh-repos/improved-fraction/main.cpp -o CMakeFiles/fraction.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vlerm/gh-repos/improved-fraction/main.cpp -o CMakeFiles/fraction.dir/main.cpp.s
 
 CMakeFiles/fraction.dir/lib/fraction.cpp.o: CMakeFiles/fraction.dir/flags.make
 CMakeFiles/fraction.dir/lib/fraction.cpp.o: /home/vlerm/gh-repos/improved-fraction/lib/fraction.cpp
 CMakeFiles/fraction.dir/lib/fraction.cpp.o: CMakeFiles/fraction.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vlerm/gh-repos/improved-fraction/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/fraction.dir/lib/fraction.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fraction.dir/lib/fraction.cpp.o -MF CMakeFiles/fraction.dir/lib/fraction.cpp.o.d -o CMakeFiles/fraction.dir/lib/fraction.cpp.o -c /home/vlerm/gh-repos/improved-fraction/lib/fraction.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fraction.dir/lib/fraction.cpp.o -MF CMakeFiles/fraction.dir/lib/fraction.cpp.o.d -o CMakeFiles/fraction.dir/lib/fraction.cpp.o -c /home/vlerm/gh-repos/improved-fraction/lib/fraction.cpp
 
 CMakeFiles/fraction.dir/lib/fraction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fraction.dir/lib/fraction.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vlerm/gh-repos/improved-fraction/lib/fraction.cpp > CMakeFiles/fraction.dir/lib/fraction.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vlerm/gh-repos/improved-fraction/lib/fraction.cpp > CMakeFiles/fraction.dir/lib/fraction.cpp.i
 
 CMakeFiles/fraction.dir/lib/fraction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fraction.dir/lib/fraction.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vlerm/gh-repos/improved-fraction/lib/fraction.cpp -o CMakeFiles/fraction.dir/lib/fraction.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vlerm/gh-repos/improved-fraction/lib/fraction.cpp -o CMakeFiles/fraction.dir/lib/fraction.cpp.s
 
 # Object files for target fraction
 fraction_OBJECTS = \

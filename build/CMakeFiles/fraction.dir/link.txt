@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/fraction.dir/link.d CMakeFiles/fraction.dir/main.cpp.o CMakeFiles/fraction.dir/lib/fraction.cpp.o -o fraction
+/usr/bin/g++ -Wl,--dependency-file=CMakeFiles/fraction.dir/link.d CMakeFiles/fraction.dir/main.cpp.o CMakeFiles/fraction.dir/lib/fraction.cpp.o -o fraction

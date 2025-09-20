@@ -1,5 +1,12 @@
 /home/vlerm/gh-repos/improved-fraction/build/CMakeFiles/inline_dummy.dir
-/home/vlerm/gh-repos/improved-fraction/build/CMakeFiles/fractionlib.dir
+/home/vlerm/gh-repos/improved-fraction/build/CMakeFiles/lib.dir
 /home/vlerm/gh-repos/improved-fraction/build/CMakeFiles/fraction.dir
+/home/vlerm/gh-repos/improved-fraction/build/CMakeFiles/run_tests.dir
 /home/vlerm/gh-repos/improved-fraction/build/CMakeFiles/edit_cache.dir
 /home/vlerm/gh-repos/improved-fraction/build/CMakeFiles/rebuild_cache.dir
+/home/vlerm/gh-repos/improved-fraction/build/_deps/catch2-build/CMakeFiles/edit_cache.dir
+/home/vlerm/gh-repos/improved-fraction/build/_deps/catch2-build/CMakeFiles/rebuild_cache.dir
+/home/vlerm/gh-repos/improved-fraction/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir
+/home/vlerm/gh-repos/improved-fraction/build/_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir
+/home/vlerm/gh-repos/improved-fraction/build/_deps/catch2-build/src/CMakeFiles/edit_cache.dir
+/home/vlerm/gh-repos/improved-fraction/build/_deps/catch2-build/src/CMakeFiles/rebuild_cache.dir

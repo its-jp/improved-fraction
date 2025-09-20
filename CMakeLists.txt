@@ -18,6 +18,18 @@ if(INL_FILES)
                                                   # final
   )
 endif()
+include(FetchContent)
 
-add_library(fractionlib lib/fraction.cpp lib/fraction.hpp)
+add_library(lib lib/fraction.cpp lib/fraction.hpp)
 add_executable(fraction main.cpp lib/fraction.cpp)
+FetchContent_Declare(
+  catch2
+  GIT_REPOSITORY https://github.com/catchorg/Catch2.git
+  GIT_TAG v3.4.0)
+
+FetchContent_MakeAvailable(catch2)
+
+file(GLOB_RECURSE TEST_SOURCES "tests/*.cpp")
+add_executable(run_tests ${TEST_SOURCES} lib/fraction.cpp)
+target_link_libraries(run_tests PRIVATE Catch2::Catch2WithMain)
+target_include_directories(run_tests PRIVATE lib)
