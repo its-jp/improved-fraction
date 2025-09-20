@@ -2,20 +2,22 @@
 #include <stdio.h>
 #include "node.hpp"
 #include <iostream>
+
+template <typename T>
 class LinkedList {
   public:
-    LinkedList(size_t t);
-    LinkedList(const LinkedList& l);
+    LinkedList();
+    LinkedList(const LinkedList<T>& l);
 
-    void addNodeLast(Node* node);
-    void addNodeFirst(Node* node);
+    void addNodeLast(Node<T>* node);
+    void addNodeFirst(Node<T>* node);
 
-    Node* removeNodeLast();
-    Node* removeNodeFirst();
+    Node<T>* removeNodeLast();
+    Node<T>* removeNodeFirst();
 
     std::string toString();
-  private:
-    size_t data_type;
-    Node* head;
+  private:    
+    Node<T>* head;
 };
 
+#include "linked_list.inl"

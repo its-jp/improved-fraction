@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Users/u23140/homebrew/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /Users/u23140/homebrew/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/u23140/gh-projects/improved-fraction
+CMAKE_SOURCE_DIR = /home/vlerm/gh-repos/improved-fraction
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/u23140/gh-projects/improved-fraction/build
+CMAKE_BINARY_DIR = /home/vlerm/gh-repos/improved-fraction/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/fractionlib.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/fractionlib.dir/codegen:
 .PHONY : CMakeFiles/fractionlib.dir/codegen
 
 CMakeFiles/fractionlib.dir/lib/fraction.cpp.o: CMakeFiles/fractionlib.dir/flags.make
-CMakeFiles/fractionlib.dir/lib/fraction.cpp.o: /Users/u23140/gh-projects/improved-fraction/lib/fraction.cpp
+CMakeFiles/fractionlib.dir/lib/fraction.cpp.o: /home/vlerm/gh-repos/improved-fraction/lib/fraction.cpp
 CMakeFiles/fractionlib.dir/lib/fraction.cpp.o: CMakeFiles/fractionlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/u23140/gh-projects/improved-fraction/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fractionlib.dir/lib/fraction.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fractionlib.dir/lib/fraction.cpp.o -MF CMakeFiles/fractionlib.dir/lib/fraction.cpp.o.d -o CMakeFiles/fractionlib.dir/lib/fraction.cpp.o -c /Users/u23140/gh-projects/improved-fraction/lib/fraction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vlerm/gh-repos/improved-fraction/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fractionlib.dir/lib/fraction.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fractionlib.dir/lib/fraction.cpp.o -MF CMakeFiles/fractionlib.dir/lib/fraction.cpp.o.d -o CMakeFiles/fractionlib.dir/lib/fraction.cpp.o -c /home/vlerm/gh-repos/improved-fraction/lib/fraction.cpp
 
 CMakeFiles/fractionlib.dir/lib/fraction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fractionlib.dir/lib/fraction.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/u23140/gh-projects/improved-fraction/lib/fraction.cpp > CMakeFiles/fractionlib.dir/lib/fraction.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vlerm/gh-repos/improved-fraction/lib/fraction.cpp > CMakeFiles/fractionlib.dir/lib/fraction.cpp.i
 
 CMakeFiles/fractionlib.dir/lib/fraction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fractionlib.dir/lib/fraction.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/u23140/gh-projects/improved-fraction/lib/fraction.cpp -o CMakeFiles/fractionlib.dir/lib/fraction.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vlerm/gh-repos/improved-fraction/lib/fraction.cpp -o CMakeFiles/fractionlib.dir/lib/fraction.cpp.s
 
 # Object files for target fractionlib
 fractionlib_OBJECTS = \
@@ -96,7 +96,7 @@ fractionlib_EXTERNAL_OBJECTS =
 libfractionlib.a: CMakeFiles/fractionlib.dir/lib/fraction.cpp.o
 libfractionlib.a: CMakeFiles/fractionlib.dir/build.make
 libfractionlib.a: CMakeFiles/fractionlib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/u23140/gh-projects/improved-fraction/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libfractionlib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vlerm/gh-repos/improved-fraction/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libfractionlib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/fractionlib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fractionlib.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/fractionlib.dir/clean:
 .PHONY : CMakeFiles/fractionlib.dir/clean
 
 CMakeFiles/fractionlib.dir/depend:
-	cd /Users/u23140/gh-projects/improved-fraction/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/u23140/gh-projects/improved-fraction /Users/u23140/gh-projects/improved-fraction /Users/u23140/gh-projects/improved-fraction/build /Users/u23140/gh-projects/improved-fraction/build /Users/u23140/gh-projects/improved-fraction/build/CMakeFiles/fractionlib.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/vlerm/gh-repos/improved-fraction/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vlerm/gh-repos/improved-fraction /home/vlerm/gh-repos/improved-fraction /home/vlerm/gh-repos/improved-fraction/build /home/vlerm/gh-repos/improved-fraction/build /home/vlerm/gh-repos/improved-fraction/build/CMakeFiles/fractionlib.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/fractionlib.dir/depend
 

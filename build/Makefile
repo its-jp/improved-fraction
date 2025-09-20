@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Users/u23140/homebrew/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /Users/u23140/homebrew/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/u23140/gh-projects/improved-fraction
+CMAKE_SOURCE_DIR = /home/vlerm/gh-repos/improved-fraction
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/u23140/gh-projects/improved-fraction/build
+CMAKE_BINARY_DIR = /home/vlerm/gh-repos/improved-fraction/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/u23140/gh-projects/improved-fraction/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/Users/u23140/homebrew/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/Users/u23140/homebrew/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,16 +87,16 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/u23140/gh-projects/improved-fraction/build/CMakeFiles /Users/u23140/gh-projects/improved-fraction/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vlerm/gh-repos/improved-fraction/build/CMakeFiles /home/vlerm/gh-repos/improved-fraction/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/u23140/gh-projects/improved-fraction/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vlerm/gh-repos/improved-fraction/build/CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/u23140/gh-projects/improved-fraction/build/CMakeFiles /Users/u23140/gh-projects/improved-fraction/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vlerm/gh-repos/improved-fraction/build/CMakeFiles /home/vlerm/gh-repos/improved-fraction/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/u23140/gh-projects/improved-fraction/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vlerm/gh-repos/improved-fraction/build/CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
@@ -122,6 +122,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named inline_dummy
+
+# Build rule for target.
+inline_dummy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 inline_dummy
+.PHONY : inline_dummy
+
+# fast build rule for target.
+inline_dummy/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/inline_dummy.dir/build.make CMakeFiles/inline_dummy.dir/build
+.PHONY : inline_dummy/fast
 
 #=============================================================================
 # Target rules for targets named fractionlib
@@ -211,6 +224,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... fraction"
 	@echo "... fractionlib"
+	@echo "... inline_dummy"
 	@echo "... lib/fraction.o"
 	@echo "... lib/fraction.i"
 	@echo "... lib/fraction.s"

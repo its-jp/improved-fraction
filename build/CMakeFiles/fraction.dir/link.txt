@@ -1,1 +1,1 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/fraction.dir/main.cpp.o CMakeFiles/fraction.dir/lib/fraction.cpp.o -o fraction
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/fraction.dir/link.d CMakeFiles/fraction.dir/main.cpp.o CMakeFiles/fraction.dir/lib/fraction.cpp.o -o fraction

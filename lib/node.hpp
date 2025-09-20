@@ -1,8 +1,9 @@
 #pragma once
-#include <cstddef>
+template <typename T>
 class Node {
   public:
-    Node(size_t t);
-    void* data;
-    Node* next;
+    Node(T data);
+    T data;
+    Node<T>* next;
 };
+#include "node.inl"

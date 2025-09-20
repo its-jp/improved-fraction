@@ -1,6 +1,5 @@
 #include "lib/fraction.hpp"
 #include "lib/linked_list.hpp"
-#include <cstdint>
 #include <iostream>
 int main(){
 
@@ -9,7 +8,10 @@ int main(){
   Fraction f3 = Fraction(8, 8);
   Fraction f4 = Fraction(-8, 8);
 
-  LinkedList l = LinkedList(sizeof(int));
+  LinkedList l = LinkedList<int>();
+  l.addNodeFirst(new Node<int>(3));
+  l.addNodeLast(new Node<int>(5));
+  l.addNodeFirst(new Node<int>(9));
   ++f1;
   --f1;
   Fraction::simplify(f2);
@@ -27,5 +29,9 @@ int main(){
   std::cout << (f4 > f2) << "\n"; //false
   std::cout << (f4==f4) << "\n"; //true
   std::cout << (f4 != f3) << "\n"; //true
+ 
+  std::cout << "=====LISTA-LIGADA-TESTE=====" << "\n";
+  std::cout << l.toString() << "\n";
   return 0;
+
 }

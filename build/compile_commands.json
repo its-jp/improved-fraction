@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/vlerm/gh-repos/improved-fraction/build",
+  "command": "/usr/bin/c++    -o CMakeFiles/fractionlib.dir/lib/fraction.cpp.o -c /home/vlerm/gh-repos/improved-fraction/lib/fraction.cpp",
+  "file": "/home/vlerm/gh-repos/improved-fraction/lib/fraction.cpp",
+  "output": "CMakeFiles/fractionlib.dir/lib/fraction.cpp.o"
+},
+{
+  "directory": "/home/vlerm/gh-repos/improved-fraction/build",
+  "command": "/usr/bin/c++    -o CMakeFiles/fraction.dir/main.cpp.o -c /home/vlerm/gh-repos/improved-fraction/main.cpp",
+  "file": "/home/vlerm/gh-repos/improved-fraction/main.cpp",
+  "output": "CMakeFiles/fraction.dir/main.cpp.o"
+},
+{
+  "directory": "/home/vlerm/gh-repos/improved-fraction/build",
+  "command": "/usr/bin/c++    -o CMakeFiles/fraction.dir/lib/fraction.cpp.o -c /home/vlerm/gh-repos/improved-fraction/lib/fraction.cpp",
+  "file": "/home/vlerm/gh-repos/improved-fraction/lib/fraction.cpp",
+  "output": "CMakeFiles/fraction.dir/lib/fraction.cpp.o"
+}
+]
